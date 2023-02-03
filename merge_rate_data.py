@@ -19,6 +19,8 @@ for f in csv_files:
     df = pd.read_csv(f)
     files.append(df) #create list of csvs
 
+new_df = pd.DataFrame()
+    
 for i in len(files): #for each csv in unmerged data list
   if i == 0:
     new_df = files[i] #save first file as new df
